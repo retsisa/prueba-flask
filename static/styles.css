@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    background: green;
+}
+
+.btn.edit { background: #4CAF50; }
+.btn.delete { background: #f44336; }
+.btn:hover { opacity: 0.8; }
+
+.flash {
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 3px;
+}
+
+/* Estilos para formularios */
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.btn.cancel {
+    background: #777;
+    margin-left: 10px;
+}
