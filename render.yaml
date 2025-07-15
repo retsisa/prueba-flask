@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: flask-productos-alex  # Nombre único para tu servicio
+    name: alex
     runtime: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app

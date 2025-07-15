@@ -1,20 +1,20 @@
 from flask import Flask,render_template,request,redirect,url_for,flash
 import sqlite3
-import os
+#import os
 
 app=Flask(__name__)
 app.secret_key='tu_clave_secreta'
 
-DATABASE=os.path.join('database','productos.db')
+#DATABASE=os.path.join('database','productos.db')
 
 def get_connection_db():
-    conn=sqlite3.connect(DATABASE)
+    conn=sqlite3.connect('database/productos.db')
     conn.row_factory=sqlite3.Row
     return conn
 
 def init_db():
-    if not os.path.exists('database'):
-        os.makedirs('database')
+    #if not os.path.exists('database'):
+        #os.makedirs('database')
     conn=get_connection_db()
     conn.execute('''
             CREATE TABLE IF NOT EXISTS productos(
@@ -83,5 +83,5 @@ def eliminar(id):
 
 if __name__=="__main__":
     init_db()
-    #app.run(debug=True)
-    app.run(host='0.0.0.0', port=10000)
+    app.run(debug=True)
+    #app.run(host='0.0.0.0', port=10000)
